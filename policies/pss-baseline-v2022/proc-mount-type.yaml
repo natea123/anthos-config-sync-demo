@@ -33,7 +33,7 @@ metadata: # kpt-merge: /pss-baseline-v2022-proc-mount-type
       }"
     internal.kpt.dev/upstream-identifier: 'constraints.gatekeeper.sh|K8sPSPProcMount|default|pss-baseline-v2022-proc-mount-type'
 spec:
-  enforcementAction: dryrun
+  enforcementAction: deny
   match:
     kinds:
       - apiGroups:

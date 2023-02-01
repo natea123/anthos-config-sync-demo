@@ -33,7 +33,7 @@ metadata: # kpt-merge: /pss-baseline-v2022-selinux
       }"
     internal.kpt.dev/upstream-identifier: 'constraints.gatekeeper.sh|K8sPSPSELinuxV2|default|pss-baseline-v2022-selinux'
 spec:
-  enforcementAction: dryrun
+  enforcementAction: deny
   match:
     kinds:
       - apiGroups:

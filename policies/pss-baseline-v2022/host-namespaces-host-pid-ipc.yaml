@@ -33,7 +33,7 @@ metadata: # kpt-merge: /pss-baseline-v2022-host-namespaces-host-pid-ipc
       }"
     internal.kpt.dev/upstream-identifier: 'constraints.gatekeeper.sh|K8sPSPHostNamespace|default|pss-baseline-v2022-host-namespaces-host-pid-ipc'
 spec:
-  enforcementAction: dryrun
+  enforcementAction: deny
   match:
     kinds:
     - apiGroups:

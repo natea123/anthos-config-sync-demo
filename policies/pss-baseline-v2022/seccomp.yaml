@@ -33,7 +33,7 @@ metadata: # kpt-merge: /pss-baseline-v2022-seccomp
       }"
     internal.kpt.dev/upstream-identifier: 'constraints.gatekeeper.sh|K8sPSPSeccomp|default|pss-baseline-v2022-seccomp'
 spec:
-  enforcementAction: dryrun
+  enforcementAction: deny
   match:
     kinds:
     - apiGroups:

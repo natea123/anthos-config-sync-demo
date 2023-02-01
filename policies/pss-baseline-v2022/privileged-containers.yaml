@@ -33,7 +33,7 @@ metadata: # kpt-merge: /pss-baseline-v2022-privileged-containers
       }"
     internal.kpt.dev/upstream-identifier: 'constraints.gatekeeper.sh|K8sPSPPrivilegedContainer|default|pss-baseline-v2022-privileged-containers'
 spec:
-  enforcementAction: dryrun
+  enforcementAction: deny
   match:
     kinds:
     - apiGroups:
