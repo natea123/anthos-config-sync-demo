@@ -39,4 +39,4 @@ resources:
 
 
 commonAnnotations:
-  configsync.gke.io/cluster-name-selector: autopilot-cluster-1, autopilot-cluster-2
+  configsync.gke.io/cluster-name-selector: autopilot-cluster-2
