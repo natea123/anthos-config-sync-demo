@@ -1,0 +1,22 @@
+kind: Cluster
+apiVersion: clusterregistry.k8s.io/v1alpha1
+metadata:
+  name: autopilot-cluster-1
+  labels:
+    type: gke
+---
+kind: Cluster
+apiVersion: clusterregistry.k8s.io/v1alpha1
+metadata:
+  name: autopilot-cluster-2
+  labels:
+    type: gke
+---
+kind: ClusterSelector
+apiVersion: configmanagement.gke.io/v1
+metadata:
+  name: selector-gke-clusters
+spec:
+  selector:
+    matchLabels:
+      type: gke
