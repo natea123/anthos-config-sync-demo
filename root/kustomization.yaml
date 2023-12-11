@@ -9,34 +9,4 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- policies/cis-gke/require-binauthz.yaml
-- policies/cis-gke/require-cos-node-image.yaml
-- policies/cis-gke/require-gke-metadata-server-enabled.yaml
-- policies/cis-gke/require-ingress.class-gce.yaml
-- policies/cis-gke/require-managed-certificates.yaml
-- policies/cis-gke/require-namespace-networkpolicy.yaml
-- policies/cis-gke/require-seccomp-default.yaml
-- policies/cis-gke/require-securitycontext.yaml
-- policies/cis-gke/restrict-apparmor.yaml
-- policies/cis-gke/restrict-automountserviceaccounttoken.yaml
-- policies/cis-gke/restrict-capabilities.yaml
-- policies/cis-gke/restrict-cluster-admin-role.yaml
-- policies/cis-gke/restrict-creation-with-default-serviceaccount.yaml
-- policies/cis-gke/restrict-default-namespace.yaml
-- policies/cis-gke/restrict-env-var-secrets.yaml
-- policies/cis-gke/restrict-host-namespace.yaml
-- policies/cis-gke/restrict-hostnetwork.yaml
-- policies/cis-gke/restrict-loadbalancer.yaml
-- policies/cis-gke/restrict-pods-create.yaml
-- policies/cis-gke/restrict-privilege-escalation.yaml
-- policies/cis-gke/restrict-privileged-containers.yaml
-- policies/cis-gke/restrict-rbac-subjects.yaml
-- policies/cis-gke/restrict-role-secrets.yaml
-- policies/cis-gke/restrict-role-wildcards.yaml
-- policies/cis-gke/restrict-root-containers.yaml
-- policies/cis-gke/restrict-secrets-of-type-basic-auth.yaml
-- policies/cis-gke/restrict-selinux.yaml
-
-
-commonAnnotations:
-  configsync.gke.io/cluster-name-selector: autopilot-cluster-2
+- ../../base
